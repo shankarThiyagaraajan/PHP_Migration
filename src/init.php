@@ -1,6 +1,6 @@
 <?php
 
-namespace shankarbala33/php_migration;
+namespace shankarbala33\php_migration;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 
