@@ -19,7 +19,13 @@ class Util
     public static function migration()
     {
         $tables = Migration::tables();
+        // Simple Filters.
+        if(!isset($tables)) return false;
+     
         foreach ($tables as $key => $value) {
+         
+           if(empty($value) || is_null($value) || !isset($value)) continue;
+         
             loop:
             if (Capsule::Schema()->hasTable($key)) {
                 foreach ($value as $column => $datatype) {
