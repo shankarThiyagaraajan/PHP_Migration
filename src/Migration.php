@@ -6,7 +6,10 @@ namespace shankarbala33/php_migration;
  * Class Rules for Manage Rules for Different Forms
  */
 class Migration
-{
+{    
+    /**
+     * Sample Table Schema.
+     */
     public static function tables()
     {
         $tables = array(
