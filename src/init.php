@@ -8,7 +8,7 @@ use Illuminate\Database\Capsule\Manager as Capsule;
  * General Package for call database tables to create or update it self automatically
  */
  
-class Util
+class Database
 {
 
   /**
