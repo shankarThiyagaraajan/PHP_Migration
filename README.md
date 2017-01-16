@@ -31,7 +31,10 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
                      'key' => [],
                      'type' => 'longtext',
                      'limit' => ''
-                 ]
+                 ],
+                  '__table_property' => [    ===========> For Table Properties.
+                    'ENGINE' => 'InnoDB'
+                ]
                ]
               ];
     
