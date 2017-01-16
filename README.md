@@ -50,3 +50,7 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
        Database::migration();
         
 It will creates the table **Student** and **Class** with given properties.
+
+
+## License  
+[MIT License](https://github.com/shankarThiyagaraajan/PHP_Migration/blob/master/LICENSE) © Shankar Thiyagaraajan
