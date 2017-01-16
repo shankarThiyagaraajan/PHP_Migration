@@ -10,7 +10,7 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
     
     $my_table_schema =  [
               'table1' => [
-                 'id' => [
+                 'id' => [                 ===========> Result : "id int(20) auto_increment primary key"
                      'key' => [
                          'auto_increment',
                          'primary key'
@@ -18,17 +18,17 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
                      'type' => 'int',
                      'limit' => 20
                  ],
-                 'name' => [
+                 'name' => [                ===========> Result : "name varchar(255) unique key"
                      'key' => [
                          'unique key'
                      ],
                      'type' => 'varchar',
                      'limit' => 255
                  ],
-                 'value' => [
+                 'value' => [               ===========> Result : "value longtext"
                      'key' => [],
-                     'type' => 'int',
-                     'limit' => 50
+                     'type' => 'longtext',
+                     'limit' => ''
                  ]
                ]
               ];
@@ -36,7 +36,8 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
     $table_schema = "YOUR_TABLE_SCHEMA" ( same as $my_table_schema)
     
     // Initiate Migration.
-    ST_DATABASE::migrate($table_schema);
+    ST_DATABASE::migrate($table_schema);     ===============> It's Generate Formatted Wordpress Query and Execute.
+                                                             
 
       
 ### General PHP Migration
