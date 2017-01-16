@@ -39,7 +39,7 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
     ST_DATABASE::migrate($table_schema);
 
       
- ### General PHP Migration
+### General PHP Migration
  
        use shankarbala33\php_migration\Database;
        
