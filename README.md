@@ -1,6 +1,8 @@
 # PHP_Migration
 Simple PHP package for Database Migration, Suitable for all kind PHP Projects
 
+[![Packagist](https://img.shields.io/packagist/v/jgrossi/corcel.svg)](https://github.com/shankarThiyagaraajan/PHP_Migration/releases)
+
 ### Sample Table Scheme
         
     class Migration
