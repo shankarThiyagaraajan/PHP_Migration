@@ -4,33 +4,42 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
 [![Packagist](https://img.shields.io/badge/Packagist-v0.9-blue.svg)](https://github.com/shankarThiyagaraajan/PHP_Migration/releases)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/shankarThiyagaraajan/PHP_Migration/blob/master/LICENSE)
 
-### Sample Table Scheme
-        
-    class Migration
-     {    
-     /**
-      * Sample Table Schema.
-      */
-      public static function tables()
-      {
-        $tables = array(
-            'student' => [
-                'student_id' => 'integer',
-                'name' => 'string',
-                'class' => 'string',
-                'dob'  => 'data',
-                'age' => 'integer'
-            ],
-            'class' => [
-                'class_id' => 'integer',
-                'student_id' => 'integer',
-                'section' => 'string'
-            ]
-        );
-       }
-     }
-       
- ### Initiating Migration
+ ## For Wordpress Migration
+    
+    include_once('/wordpress/migration.php');
+    
+    $my_table_schema =  [
+              'table1' => [
+                 'id' => [
+                     'key' => [
+                         'auto_increment',
+                         'primary key'
+                     ],
+                     'type' => 'int',
+                     'limit' => 20
+                 ],
+                 'name' => [
+                     'key' => [
+                         'unique key'
+                     ],
+                     'type' => 'varchar',
+                     'limit' => 255
+                 ],
+                 'value' => [
+                     'key' => [],
+                     'type' => 'int',
+                     'limit' => 50
+                 ]
+               ]
+              ];
+    
+    $table_schema = "YOUR_TABLE_SCHEMA" ( same as $my_table_schema)
+    
+    // Initiate Migration.
+    ST_DATABASE::migrate($table_schema);
+
+      
+ ### General PHP Migration
  
        use shankarbala33\php_migration\Database;
        
