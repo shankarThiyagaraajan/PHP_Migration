@@ -4,7 +4,7 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
 [![Packagist](https://img.shields.io/badge/Packagist-v0.9-blue.svg)](https://github.com/shankarThiyagaraajan/PHP_Migration/releases)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/shankarThiyagaraajan/PHP_Migration/blob/master/LICENSE)
 
- ## For Wordpress Migration
+## For Wordpress Migration
     
     include_once('/wordpress/migration.php');
     
