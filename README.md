@@ -41,7 +41,7 @@ Simple PHP package for Database Migration, Suitable for all kind PHP Projects
     $table_schema = "YOUR_TABLE_SCHEMA" ( same as $my_table_schema)
     
     // Initiate Migration.
-    ST_DATABASE::migrate($table_schema);     ===============> It's Generate Formatted Wordpress Query and Execute.
+    ST_DATABASE::migrate($table_schema);     ===============> It's Generate Formatted MySQL Query and Execute.
                                                             
         
 It will creates the table **Student** and **Class** with given properties.
