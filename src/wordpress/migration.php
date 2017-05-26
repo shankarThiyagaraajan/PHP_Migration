@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class ST_DATABASE
+ * Class for Wordpress migtration.
  */
 class ST_DATABASE
 {
