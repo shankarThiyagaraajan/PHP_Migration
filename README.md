@@ -1,4 +1,4 @@
-# PHP_Migration
+# PHP Migration
 Simple PHP package for Database Migration, with zero dependancy.
 
 [![Packagist](https://img.shields.io/badge/Packagist-v0.9-blue.svg)](https://packagist.org/packages/shankarbala33/php_migration)
