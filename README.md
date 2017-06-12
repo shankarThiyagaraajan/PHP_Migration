@@ -12,7 +12,7 @@ Simple PHP package for Database Migration, with zero dependancy.
     
     $my_table_schema =  [
               'table1' => [
-                 'id' => [                 ===========> Result : "id int(20) auto_increment primary key"
+                 'id' => [                  // Result : "id int(20) auto_increment primary key"
                      'key' => [
                          'auto_increment',
                          'primary key'
@@ -20,28 +20,48 @@ Simple PHP package for Database Migration, with zero dependancy.
                      'type' => 'int',
                      'limit' => 20
                  ],
-                 'name' => [                ===========> Result : "name varchar(255) unique key"
+                 'name' => [                // Result : "name varchar(255) unique key"
                      'key' => [
                          'unique key'
                      ],
                      'type' => 'varchar',
                      'limit' => 255
                  ],
-                 'value' => [               ===========> Result : "value longtext"
+                 'value' => [               // Result : "value longtext"
                      'key' => [],
                      'type' => 'longtext',
                      'limit' => ''
                  ],
-                  '__table_property' => [    ===========> For Table Properties.
+                  '__table_property' => [    // For Table Properties.
                     'ENGINE' => 'InnoDB'
                 ]
                ]
               ];
     
-    $table_schema = "YOUR_TABLE_SCHEMA" ( same as $my_table_schema)
+## For Core PHP
+        
+      $my_table_schema = [
+            'student' => [
+                'student_id' => 'integer',
+                'name' => 'string',
+                'class' => 'string',
+                'dob'  => 'data',
+                'age' => 'integer'
+            ],
+            'class' => [
+                'class_id' => 'integer',
+                'student_id' => 'integer',
+                'section' => 'string'
+            ]
+         ];
+         
+### Finally 
+---
     
-    // Initiate Migration.
-    ST_DATABASE::migrate($table_schema);     ===============> It's Generate Formatted MySQL Query and Execute.
+    $table_schema = "YOUR_TABLE_SCHEMA" ($my_table_schema)
+    
+    // Trigger Migration.
+    ST_DATABASE::migrate($table_schema);     // It's Generate Formatted MySQL Query and Execute.
                                                             
         
 It will creates the table **Student** and **Class** with given properties.
