@@ -11,7 +11,7 @@ Simple PHP package for Database Migration, with zero dependancy.
     include_once('/wordpress/migration.php');
     
     $my_table_schema =  [
-              'table1' => [
+              'student_meta' => [
                  'id' => [                  // Result : "id int(20) auto_increment primary key"
                      'key' => [
                          'auto_increment',
